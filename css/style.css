@@ -1,0 +1,133 @@
+body{
+    font-family: "Roboto "Open Sans" sans-serif";    
+}
+
+nav .navbar-brand img{
+    width: 40% ;
+}
+
+nav .active{
+    color: #009AD8 !important;
+    border: #009AD8 1px solid;
+    border-radius: 5rem;
+    padding:0rem 0rem;
+}
+
+nav li a{
+    padding:1px 0rem !important;
+}
+
+nav li:hover a{
+    color: #009AD8;
+    border: #009AD8 1px solid;
+    border-radius: 5rem;
+}
+nav li a:hover{
+    color: #009AD8 !important;
+    
+}
+
+
+section {
+    background: url(../img/banner.png) no-repeat;
+    background-color: #1E202B;
+}
+
+input{
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+.uper{
+    background-color: #2D303D;
+}
+.uper2{
+    background-color: #222530;
+}
+
+.uper p,.uper2 p{
+    color: #BFC1C8;
+
+    padding: 5px;
+}
+
+.card{
+    background-color: #323544;
+}
+.card2{
+    background-color: #262936;
+}
+
+.blue{
+    color: #009AD8;
+}
+
+.city{
+    color: 
+    #BFC1C8;
+    font-size: 18px;
+}
+
+.grade{
+    color: white;
+    font-size: 80px;
+    font-weight: 700;
+}
+.grade span{
+    color: white;
+}
+span{
+    color: 
+    #BFC1C8;
+    padding: 5px;
+}
+.grade2{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+footer{
+    background-color: #262936;
+}
+
+footer p{
+    color: 
+    #BFC1C8;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.icons span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px; 
+    background-color: #1E202B; 
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.icons i {
+    font-size: 20px;
+    color:#009AD8;
+    transition: all .5s;
+
+}
+
+.icons span:hover{
+    background-color: #009AD8;
+}
+
+.icons span:hover i{
+    color: white;
+}

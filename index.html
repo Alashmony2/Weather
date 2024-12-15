@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-4 ">
+        <div class="container">
+            <a class="navbar-brand" href=""><img class=" p-3" src="img/logo@2x.png" alt="logo">Weather</a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item p-4">
+                        <a class="nav-link active px-4" href="#" aria-current="page"
+                            >Home
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item p-4">
+                        <a class="nav-link px-4" href="#">News</a>
+                    </li>
+                    <li class="nav-item p-4">
+                        <a class="nav-link px-4" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item p-4">
+                        <a class="nav-link px-4" href="#">Photo</a>
+                    </li>
+                    <li class="nav-item p-4">
+                        <a class="nav-link px-4" href="#">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="pt-5 pb-2 ">
+        <div class="container">
+            <div class="d-flex bg-dark my-4 p-1 rounded-pill ">
+                <input
+                    type="search" id="search"
+                    class="w-100 bg-dark text-white ps-3 rounded-pill" placeholder="Find your location"/>
+                <button
+                    class="btn btn-primary rounded-pill m-0 px-4 " id="searchBtn">
+                    Find
+                </button>
+            </div>
+            <div class="row my-5 g-0">
+                <div class="col-md-4 card ">
+                    <div class="iteam">
+                        <div class="uper d-flex justify-content-between  p-1 ">
+                            <p id="">Today</p>
+                            <p id="toDay">13 Decemper</p>
+                        </div>
+                        <div class="middle  p-5">
+                            <p class="city" id="city">Cairo</p>
+                            <p class="h1 grade"><span id="temp">16.2</span><sup>o</sup>C</p>
+                            <img id="icon1" src="img/113.png" alt="">
+                            <p class="blue" id="status">clear</p>
+                            <img src="img/icon-umberella.png" alt=""> <span id="umb"></span>
+                            <img src="img/icon-wind.png" alt=""> <span id="wind1">18</span>
+                            <img src="img/icon-compass.png" alt=""> <span id="dir">East</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card2 ">
+                    <div class="iteam ">
+                        <div class="uper2 text-center p-1 ">
+                            <p id="nextDay">Saturday</p>
+                        </div>
+                        <div class="middle text-center  p-5">
+                            <img id="icon2" src="img/113 (1).png" alt="">
+                            <p class="grade2" id="maxTemp">21.1</p>
+                            <p class="grade2" id="minTemp">12.3o</p>
+                            <p class="blue" id="status2">Sunny</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card">
+                    <div class="iteam ">
+                        <div class="uper text-center p-1 ">
+                            <p id="thirdDay">Sunday</p>
+                        </div>
+                        <div class="middle text-center  p-5">
+                            <img id="icon3" src="img/113 (1).png" alt="">
+                            <p id="maxTemp3" class="grade2">21.1oC</p>
+                            <p id="minTemp3" class="grade2">12.3o</p>
+                            <p id="status3" class="blue">Sunny</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="left">
+                        <div class="d-flex bg-dark my-4 p-2 rounded-pill ">
+                            <input
+                                type="search"
+                                class="w-100 bg-dark text-white ps-3 rounded-pill" placeholder="Enter your email"/>
+                            <button
+                                class="btn btn-primary rounded-pill m-0 px-4 ">
+                                Subscribe
+                            </button>
+                    </div>
+                    <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="right pt-4">
+                        <div class="icons ">
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                            <span><i class="fa-brands fa-twitter"></i></span>
+                            <span><i class="fa-brands fa-linkedin"></i></span>
+                            <span><i class="fa-brands fa-pinterest"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
