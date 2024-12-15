@@ -11,7 +11,7 @@ searchBtn.addEventListener('click',()=>{
 })
 
 async function getWeather(city = 'cairo') {
-        let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=ef47c184cedd47a1a72203852241412&q=${city}&days=3`);
+        let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=ef47c184cedd47a1a72203852241412&q=${city}&days=3`);
         if (response.ok) {
             let data = await response.json();
             allData = data;
