@@ -19,7 +19,10 @@ async function getWeather(city = 'cairo') {
         }
 }
 
-getWeather();
+navigator.geolocation.getCurrentPosition((position) => {
+    const { latitude, longitude } = position.coords;
+    getWeather(`${latitude},${longitude}`);
+});
 
 let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
