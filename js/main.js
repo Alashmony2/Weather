@@ -21,10 +21,19 @@ async function getWeather(city = 'cairo') {
 
 getWeather();
 
+let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+function getDayName(dateString) {
+    let dateObject = new Date(dateString);
+    return daysOfWeek[dateObject.getDay()];
+}
+
+
 function display() {
-    document.getElementById('toDay').innerHTML = allData.forecast.forecastday[0].date;
-    document.getElementById('nextDay').innerHTML = allData.forecast.forecastday[1].date;
-    document.getElementById('thirdDay').innerHTML = allData.forecast.forecastday[2].date;
+    document.getElementById('toDay').innerHTML = getDayName(allData.forecast.forecastday[0].date);
+    document.getElementById('dateDay').innerHTML = allData.forecast.forecastday[0].date;
+    document.getElementById('nextDay').innerHTML = getDayName(allData.forecast.forecastday[1].date);
+    document.getElementById('thirdDay').innerHTML = getDayName(allData.forecast.forecastday[2].date);
     document.getElementById('city').innerHTML = allData.location.name;
     document.getElementById('temp').innerHTML = allData.current.temp_c;
     let icon1 = allData.current.condition.icon;
@@ -49,3 +58,4 @@ function display() {
     icon3 = "https:" + icon3; 
     document.getElementById('icon3').setAttribute('src',icon3);
 }
+
